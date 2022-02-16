@@ -1,0 +1,24 @@
+{
+  "name": "airbnb-scraper",
+  "version": "1.0.0",
+  "description": "A scraper tool for AirBnb Listings",
+  "author": "Victor Kelvin <victorkelvin@gmail.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node example.js"
+  },
+  "dependencies": {
+    "puppeteer": "^13.3.1",
+    "puppeteer-extra": "^3.2.3",
+    "puppeteer-extra-plugin-stealth": "^2.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorkelvin/airbnb-scraper.git"
+  }
+}
