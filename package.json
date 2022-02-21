@@ -1,6 +1,6 @@
 {
   "name": "airbnb-scraper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A scraper tool for AirBnb Listings",
   "author": "Victor Kelvin <victorkelvin@gmail.com>",
   "license": "MIT",
@@ -12,6 +12,7 @@
     "test": "node example.js"
   },
   "dependencies": {
+    "objects-to-csv": "^1.3.6",
     "puppeteer": "^13.3.1",
     "puppeteer-extra": "^3.2.3",
     "puppeteer-extra-plugin-stealth": "^2.9.0"

@@ -18,9 +18,16 @@ children (optional)  - Children quantity to be added in search. E.g: 1;
 checkin (optional)   - Check-in date in format "YYYY-MM-DD". E.g: "2022-12-20";
 checkout (optional)  - Check-out date in format "YYYY-MM-DD". E.g: "2022-12-25";
 */
-scraper(region, adults, children, checkin, checkout).then((res) => {
+scraper.scrape(region, adults, children, checkin, checkout).then((res) => {
     console.log(res);
-})
+}); //Printing the scraped data Object;
+
+
+scraper.scrapeToCSV(region, adults, children, checkin, checkout, CSVFile); //Saves the scraped data Object to file in CSV format;
+
+scraper.scrapeToCSV(region, adults, children, checkin, checkout).then((res) => {
+    console.log(res);
+}); // if the CSVFile argument is ommited, prints the scraped data Object in CSV Format
 ```
 
 ## How it works
