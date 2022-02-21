@@ -17,6 +17,7 @@ adults (optional) - Adults quantity to be added in search filter. E.g: 2;
 children (optional)  - Children quantity to be added in search. E.g: 1;
 checkin (optional)   - Check-in date in format "YYYY-MM-DD". E.g: "2022-12-20";
 checkout (optional)  - Check-out date in format "YYYY-MM-DD". E.g: "2022-12-25";
+CSVFile (optional)  - File to save the output in CSV format. If ommited, the return will be a String; 
 */
 scraper.scrape(region, adults, children, checkin, checkout).then((res) => {
     console.log(res);
